@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  auction_date: 2010-12-01
+  tmk: MyString
+  doc_number: MyString
+  auction_address: MyString
+  auction_unit: MyString
+  assessed_value_land: 1
+  assessed_value_total: 1
+  island: MyString
+  auction_city: MyString
+  auction_state: MyString
+  auction_zip: MyString
+
+two:
+  auction_date: 2010-12-01
+  tmk: MyString
+  doc_number: MyString
+  auction_address: MyString
+  auction_unit: MyString
+  assessed_value_land: 1
+  assessed_value_total: 1
+  island: MyString
+  auction_city: MyString
+  auction_state: MyString
+  auction_zip: MyString

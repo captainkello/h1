@@ -1,0 +1,43 @@
+<h1>Listing auctions</h1>
+
+<table>
+  <tr>
+    <th>Auction date</th>
+    <th>Tmk</th>
+    <th>Doc number</th>
+    <th>Auction address</th>
+    <th>Auction unit</th>
+    <th>Assessed value land</th>
+    <th>Assessed value total</th>
+    <th>Island</th>
+    <th>Auction city</th>
+    <th>Auction state</th>
+    <th>Auction zip</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @auctions.each do |auction| %>
+  <tr>
+    <td><%= auction.auction_date %></td>
+    <td><%= auction.tmk %></td>
+    <td><%= auction.doc_number %></td>
+    <td><%= auction.auction_address %></td>
+    <td><%= auction.auction_unit %></td>
+    <td><%= auction.assessed_value_land %></td>
+    <td><%= auction.assessed_value_total %></td>
+    <td><%= auction.island %></td>
+    <td><%= auction.auction_city %></td>
+    <td><%= auction.auction_state %></td>
+    <td><%= auction.auction_zip %></td>
+    <td><%= link_to 'Show', auction %></td>
+    <td><%= link_to 'Edit', edit_auction_path(auction) %></td>
+    <td><%= link_to 'Destroy', auction, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Auction', new_auction_path %>

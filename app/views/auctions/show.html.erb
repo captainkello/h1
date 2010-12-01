@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Auction date:</b>
+  <%= @auction.auction_date %>
+</p>
+
+<p>
+  <b>Tmk:</b>
+  <%= @auction.tmk %>
+</p>
+
+<p>
+  <b>Doc number:</b>
+  <%= @auction.doc_number %>
+</p>
+
+<p>
+  <b>Auction address:</b>
+  <%= @auction.auction_address %>
+</p>
+
+<p>
+  <b>Auction unit:</b>
+  <%= @auction.auction_unit %>
+</p>
+
+<p>
+  <b>Assessed value land:</b>
+  <%= @auction.assessed_value_land %>
+</p>
+
+<p>
+  <b>Assessed value total:</b>
+  <%= @auction.assessed_value_total %>
+</p>
+
+<p>
+  <b>Island:</b>
+  <%= @auction.island %>
+</p>
+
+<p>
+  <b>Auction city:</b>
+  <%= @auction.auction_city %>
+</p>
+
+<p>
+  <b>Auction state:</b>
+  <%= @auction.auction_state %>
+</p>
+
+<p>
+  <b>Auction zip:</b>
+  <%= @auction.auction_zip %>
+</p>
+
+
+<%= link_to 'Edit', edit_auction_path(@auction) %> |
+<%= link_to 'Back', auctions_path %>
