@@ -1,9 +1,13 @@
-body { background-color: #fff; color: #333; }
+body { background-color: #fffccc; color: #333; }
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
+}
+
+.data {
+  font-size:   18px;
 }
 
 pre {
