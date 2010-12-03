@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  mydate: MyString
+  auction: 
+
+two:
+  mydate: MyString
+  auction: 

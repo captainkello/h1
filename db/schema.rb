@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101201202151) do
+ActiveRecord::Schema.define(:version => 20101203022225) do
+
+  create_table "adates", :force => true do |t|
+    t.string   "mydate"
+    t.integer  "auction_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "auctions", :force => true do |t|
     t.date     "auction_date"
@@ -24,6 +31,15 @@ ActiveRecord::Schema.define(:version => 20101201202151) do
     t.string   "auction_city"
     t.string   "auction_state"
     t.string   "auction_zip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "owners", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.text     "notes"
+    t.integer  "auction_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
